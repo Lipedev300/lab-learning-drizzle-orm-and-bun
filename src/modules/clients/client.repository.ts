@@ -3,7 +3,7 @@ import type { clientReturning, clientCreating } from "../../db/schemas";
 import { clients } from "../../db/schemas";
 import { eq, ilike } from "drizzle-orm";
 
-class ClientRepository {
+export class ClientRepository {
     async createClient(data: clientCreating): Promise<clientReturning> {
         const [createdClient] = await db
             .insert(clients)
