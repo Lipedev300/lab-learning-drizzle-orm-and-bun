@@ -5,7 +5,7 @@ export const clientResponseSchema = t.Object({
     id: t.String(),
     name: t.String(),
     phone: t.String(),
-    createdAt: t.Date(),
+    createdAt: t.String(),
     interests: t.Array(t.String())
 });
 

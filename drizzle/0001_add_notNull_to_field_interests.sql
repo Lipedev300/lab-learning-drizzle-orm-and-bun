@@ -1,0 +1,1 @@
+ALTER TABLE "clients" ALTER COLUMN "interests" SET NOT NULL;

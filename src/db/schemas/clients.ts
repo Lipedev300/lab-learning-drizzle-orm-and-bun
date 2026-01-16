@@ -5,7 +5,7 @@ export const clients = pgTable("clients", {
     name: varchar("name", { length: 80}).notNull(),
     phone: varchar("phone_number", { length: 20}).notNull().unique(),
     createdAt: timestamp("created_at").notNull().defaultNow(),
-    interests: text("interests").array()
+    interests: text("interests").array().notNull()
 });
 
 export type clientReturning = typeof clients.$inferSelect;
