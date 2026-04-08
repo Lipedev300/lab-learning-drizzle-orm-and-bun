@@ -1,5 +1,5 @@
 {
-  "name": "rss-system-api",
+  "name": "lab-learning-drizzle-and-bun",
   "module": "index.ts",
   "type": "module",
   "private": true,
